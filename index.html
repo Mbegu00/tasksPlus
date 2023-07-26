@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tasks</title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+    <h2 class="titulo">TasksPlus</h2>
+    <div class="container">
+        <div class="form">
+            <h2>Add Tasks</h2>
+            <form id="form" class="form">
+                <input type="text" id="title" placeholder="Add a title" />
+                <textarea id="description" placeholder="Add a description"></textarea>
+                <input type="datetime-local" name="datetime" id="datetime" />
+                <select id="prioridadSelect">
+                    <option style="color: black;">Prioridad</option>
+                    <option style="color: red;">Urgente</option>
+                    <option style="color: orange;">Alta</option>
+                    <option style="color: green;">Normal</option>
+                </select>
+                <button type="submit">Add</button>
+            </form>              
+        </div>
+        <!-- va a imprimir los tasks -->
+        <div id="divShow"></div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
