@@ -47,7 +47,7 @@ function getTask(){
                     ${prioridadSelect}
                 </span></p>
                 <p>${description}</p> 
-                <p>${datetimeInput}</p>
+                <p><span>Vencimiento: </span> ${datetimeInput}</p>
                 <a class="dele-boton" onClick="deleteTasks('${title}')">Delete</a> 
             </div>`
     }
