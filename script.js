@@ -43,7 +43,9 @@ function getTask(){
         //y lo mostramos los datos 
         divShow.innerHTML += `
             <div>
-                <p>${title} - <span class="prioridad">${prioridadSelect}</span></p>
+                <p>${title} - <span class="priority" data-priority="${prioridadSelect}">
+                    ${prioridadSelect}
+                </span></p>
                 <p>${description}</p> 
                 <p>${datetimeInput}</p>
                 <a class="dele-boton" onClick="deleteTasks('${title}')">Delete</a> 
