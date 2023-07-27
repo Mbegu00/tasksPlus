@@ -90,9 +90,16 @@ body{
     background-color: #b82e21; 
 }
 
-.prioridad option[value="Urgente"] {
+[data-priority="Urgente"] {
     color: red;
 }
+[data-priority="Alta"] {
+    color: rgb(212, 187, 0);
+}
+[data-priority="Normal"] {
+    color: rgb(29, 85, 17);
+}
+
 /* Estilos para los campos de entrada */
 input[type="datetime-local"],
 select {
